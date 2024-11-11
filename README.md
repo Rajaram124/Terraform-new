@@ -29,3 +29,22 @@ Terraform
 | - dev --> state file
 | - stage --> state file
 | - prod  --> state file
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+$ tree
+.
+├── main.tf
+├── modules
+│   └── ec2_instances
+│       └── main.tf
+├── stage.tfvars
+├── terraform.tfstate.d
+│   ├── dev
+│   │   └── terraform.tfstate
+│   ├── prod
+│   └── stage
+│       └── terraform.tfstate
+└── terraform.tfvars
+
