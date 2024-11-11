@@ -28,4 +28,20 @@ If they don’t want to create diff. config files for diff env. There we use Ter
 Terraform
 | - dev --> state file
 | - stage --> state file
-| - prod  --> state file![image](https://github.com/user-attachments/assets/c37df4a5-cd21-49a2-8792-3b5179f0533b)
+| - prod  --> state file
+
+$ tree
+.
+├── main.tf
+├── modules
+│   └── ec2_instances
+│       └── main.tf
+├── stage.tfvars
+├── terraform.tfstate.d
+│   ├── dev
+│   │   └── terraform.tfstate
+│   ├── prod
+│   └── stage
+│       └── terraform.tfstate
+└── terraform.tfvars
+
