@@ -29,4 +29,3 @@ Terraform
 | - dev --> state file
 | - stage --> state file
 | - prod  --> state file
-
